@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Blood Donors Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="left">
+                <img src="picture.png" alt="Blood Bank Logo">
+                <span>Pakistan Blood Donors</span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li id="aboutBtn">About</li>
+                    <li id="servicesBtn">Services</li>
+                    <li id="contactBtn">Contact Us</li>
+                    <li id="adminBtn">Admin</li>
+                </ul>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden">
+            <ul>
+                <li id="mobileAboutBtn">About</li>
+                <li id="mobileServicesBtn">Services</li>
+                <li id="mobileContactBtn">Contact Us</li>
+                <li id="mobileAdminBtn">Admin</li>
+                <li id="mobileRegisterBtn">Register as Donor</li>
+                <li id="mobileSearchBtn">Find a Donor</li>
+            </ul>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Information Section -->
+            <div class="info-section" id="mainInfoSection">
+                <h1>Blood Donation Saves Lives</h1>
+                <div class="info-content">
+                    <div class="info-card">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Why Donate Blood?</h3>
+                        <p>Every blood donation can save up to 3 lives. Blood is needed every 2 seconds for patients in emergencies, surgeries, and chronic illnesses.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Donation Requirements</h3>
+                        <ul>
+                            <li>Age 17-65 years</li>
+                            <li>Weight at least 50kg</li>
+                            <li>Good health condition</li>
+                            <li>No recent tattoos/piercings</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-procedures"></i>
+                        <h3>Donation Process</h3>
+                        <ol>
+                            <li>Registration</li>
+                            <li>Health check</li>
+                            <li>Donation (10-15 mins)</li>
+                            <li>Refreshments</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button id="showRegisterBtn" class="action-btn">
+                    <i class="fas fa-user-plus"></i> Register as Donor
+                </button>
+                <button id="showSearchBtn" class="action-btn">
+                    <i class="fas fa-search"></i> Find a Donor
+                </button>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="aboutSection" class="info-section hidden">
+            <h2><i class="fas fa-info-circle"></i> About Us</h2>
+            <div class="info-content">
+                <div class="info-card">
+                    <h3>Our Mission</h3>
+                    <p>Pakistan Blood Donors Network connects blood donors with recipients across Pakistan, creating a reliable platform that saves lives through voluntary donations.</p>
+                </div>
+                <div class="info-card">
+                    <h3>How We Work</h3>
+                    <p>We maintain a nationwide database of voluntary donors. When someone needs blood, our system quickly finds matching donors in their area.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Our Impact</h3>
+                    <p>We've facilitated thousands of successful donations, helping patients in emergencies, surgeries, and chronic conditions nationwide.</p>
+                </div>
+            </div>
+            <button class="close-btn" onclick="hideSection('aboutSection')">
+                <i class="fas fa-times"></i> Close
+            </button>
+        </div>
+
+        <!-- Services Section -->
+        <div id="servicesSection" class="info-section hidden">
+            <h2><i class="fas fa-hand-holding-heart"></i> Our Services</h2>
+            <div class="info-content">
+                <div class="info-card">
+                    <h3>Donor Registration</h3>
+                    <p>We register voluntary blood donors across Pakistan with their availability and blood types.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Donor Matching</h3>
+                    <p>Our search system helps patients find compatible donors by blood type and location.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Donation Campaigns</h3>
+                    <p>We organize blood donation camps with hospitals and NGOs nationwide.</p>
+                </div>
+            </div>
+            <button class="close-btn" onclick="hideSection('servicesSection')">
+                <i class="fas fa-times"></i> Close
+            </button>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contactSection" class="info-section hidden">
+            <h2><i class="fas fa-address-book"></i> Contact Us</h2>
+            <div class="info-content">
+                <div class="info-card">
+                    <h3>Phone</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:03078323508">0307-8323508</a></p>
+                </div>
+                <div class="info-card">
+                    <h3>Email</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:zeeshan.saeed8323@gmail.com">zeeshan.saeed8323@gmail.com</a></p>
+                </div>
+                <div class="info-card">
+                    <h3>Office Address</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> //</p>
+                </div>
+            </div>
+            <button class="close-btn" onclick="hideSection('contactSection')">
+                <i class="fas fa-times"></i> Close
+            </button>
+        </div>
+
+        <!-- Admin Login Section -->
+        <div id="adminSection" class="info-section hidden">
+            <h2><i class="fas fa-lock"></i> Admin Login</h2>
+            <div class="admin-login">
+                <div class="input-wrapper">
+                    <span class="icon"><i class="fas fa-user-shield"></i></span>
+                    <input type="text" id="adminUsername" placeholder=" " required />
+                    <label>Username</label>
+                </div>
+                <div class="input-wrapper">
+                    <span class="icon"><i class="fas fa-key"></i></span>
+                    <input type="password" id="adminPassword" placeholder=" " required />
+                    <label>Password</label>
+                </div>
+                <button id="adminLoginBtn"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <div id="adminMessage" class="message"></div>
+            </div>
+            <button class="close-btn" onclick="hideSection('adminSection')">
+                <i class="fas fa-times"></i> Close
+            </button>
+        </div>
+
+        <!-- Registration Section -->
+        <div id="registrationSection" class="action-section hidden">
+            <h2><i class="fas fa-hand-holding-heart"></i> Become a Lifesaver</h2>
+            <p>Join our network of blood donors and help save lives in your community.</p>
+            
+            <div class="registration">
+                <div class="form-group">
+                    <form id="donorForm">
+                        <div class="input-wrapper">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <input type="text" id="name" placeholder=" " required />
+                            <label>Full Name</label>
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <span class="icon"><i class="fas fa-tint"></i></span>
+                            <select id="bloodGroup" required>
+                                <option value="">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <input type="tel" id="phone" placeholder=" " required />
+                            <label>Phone Number</label>
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <select id="province" required>
+                                <option value="">Select Province</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Sindh">Sindh</option>
+                                <option value="KPK">KPK</option>
+                                <option value="Balochistan">Balochistan</option>
+                                <option value="Islamabad">Islamabad Capital Territory</option>
+                                <option value="Gilgit Baltistan">Gilgit Baltistan</option>
+                                <option value="AJK">Azad Jammu & Kashmir</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <span class="icon"><i class="fas fa-city"></i></span>
+                            <input type="text" id="city" placeholder=" " required />
+                            <label>City</label>
+                        </div>
+                        
+                        <button type="submit"><i class="fas fa-heart"></i> Submit Registration</button>
+                    </form>
+                </div>
+                <button id="closeRegisterBtn" class="close-btn">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div id="searchSection" class="action-section hidden">
+            <h2><i class="fas fa-search"></i> Find a Blood Donor</h2>
+            <p>Search our database of registered blood donors to find matching donors in your area.</p>
+            
+            <div class="search">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <span class="icon"><i class="fas fa-tint"></i></span>
+                        <select id="searchBloodGroup" required>
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <select id="searchProvince">
+                            <option value="">Any Province</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Sindh">Sindh</option>
+                            <option value="KPK">KPK</option>
+                            <option value="Balochistan">Balochistan</option>
+                            <option value="Islamabad">Islamabad Capital Territory</option>
+                            <option value="Gilgit Baltistan">Gilgit Baltistan</option>
+                            <option value="AJK">Azad Jammu & Kashmir</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <span class="icon"><i class="fas fa-city"></i></span>
+                        <input type="text" id="searchCity" placeholder=" " />
+                        <label>City (optional)</label>
+                    </div>
+                    
+                    <button type="button" id="searchButton"><i class="fas fa-search"></i> Search Donors</button>
+                </div>
+                
+                <div id="searchResults" class="results-container"></div>
+                <button id="closeSearchBtn" class="close-btn">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>Made with ❤️ for Pakistan</p>
+            <div class="socials">
+                <a href="https://github.com/Zeeshan-Khan1" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:zeeshan.saeed8323@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
