@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Admin credentials (for demo purposes)
   const ADMIN_CREDENTIALS = {
-      username: "admin",
-      password: "admin123"
+      username: "",
+      password: ""
   };
   
   // Pagination variables
