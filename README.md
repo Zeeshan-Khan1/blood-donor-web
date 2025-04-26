@@ -7,6 +7,6 @@ A web-based application built to connect blood donors and recipients across Paki
 - ✅ Donor Registration Form (name, blood group, contact, location)
 - 🔍 Search for blood donors by blood group, province, and city
 - 📱 Mobile-friendly interface with responsive design
-- 🔐 Admin login (demo-only for now)
+- 🔐 Admin login 
 - 📞 Click-to-call and WhatsApp integration to contact donors directly
 - 📚 Sections: Home, About, Services, Contact, Admin Panel
