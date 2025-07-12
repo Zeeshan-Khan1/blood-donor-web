@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 // MSSQL config
 const config = {
     user: 'sa',
-    password: 'Namal8323@',
-    server: '172.17.0.2',
+    password: '',
+    server: '',
     port: 1433,
     database: 'BloodDonationDB',
     options: {
